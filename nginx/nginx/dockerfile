@@ -1,0 +1,4 @@
+#Perintah untuk menjalankan aplikasi web by CukiD
+FROM nginx
+
+COPY default /etc/nginx/sites-available/default

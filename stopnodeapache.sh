@@ -1,0 +1,2 @@
+cd apache/
+./stop.sh

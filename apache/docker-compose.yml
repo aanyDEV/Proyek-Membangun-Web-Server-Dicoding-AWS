@@ -1,0 +1,32 @@
+version: '3'
+#versi bisa dicek di web docker compose
+
+services:
+    nodapache-app:
+        build:
+          context: ./node_app
+          #lokasi aplikasi web
+        user: root
+        container_name: nodeapacheserver
+        hostname: nodeapacheserver
+        ports:
+            - "3000:3000"
+        #proxy reverse
+        networks:
+            - nodapache-net
+    apache:
+        build:
+          context: ./apache
+          #lokasi apache
+        user: root
+        container_name: apache
+        hostname: apache
+        depends_on:
+            - nodapache-app
+        #depens_on untuk mengecek servis nodapache-app apabila sudah berjalan
+        #maka kanan dijalankan servis apache
+        networks:
+            - nodapache-net
+
+networks:
+  nodapache-net:

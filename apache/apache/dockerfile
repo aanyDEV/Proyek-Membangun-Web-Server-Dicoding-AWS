@@ -1,0 +1,6 @@
+#Perintah untuk menjalankan aplikasi web by CukiD
+FROM httpd
+
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY ports.conf /etc/apache2/ports.conf
+#Perintah untuk menjalankan aplikasi web by CukiD

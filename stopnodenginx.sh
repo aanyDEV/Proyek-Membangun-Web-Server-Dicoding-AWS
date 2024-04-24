@@ -1,0 +1,2 @@
+cd nginx/
+./stop.sh
