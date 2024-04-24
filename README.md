@@ -3,7 +3,7 @@
 ---
 Alur menjalankan:
 ```sh
-git clone https://github.com/Tektek9/Proyek-Membangun-Web-Server-Dicoding-AWS---Taukhid-Aji-Nurwijayadi.git
+git clone https://github.com/aanyDEV/Proyek-Membangun-Web-Server-Dicoding-AWS.git
 ```
 Lalu lakukan ini
 ```sh
@@ -42,5 +42,3 @@ Menghentikan web server apache
 - Nginx conf: nginx/konfigurasiNGINX_Taukhid Aji Nurwijayadi.txt
 - Apache conf: apache/konfigurasiApache2_Taukhid Aji Nurwijayadi.txt
 - Apache port: apache/ports_Taukhid Aji Nurwijayadi.txt
-
-Create by CukiD
